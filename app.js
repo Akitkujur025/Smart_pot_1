@@ -36,7 +36,7 @@ app.get("/getDataFromRealtime", MainController.fetchRealtimeData);
 // Retrieving Average Data From FireStore Database
 app.get("/getAverageData", MainController.getAvgData);
 
-
-app.listen(port.env.PORT || 3000, () => {
-  console.log(`Listening on Port ${port.env.PORT || 3000}`);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Listening on Port ${port}`);
 });
