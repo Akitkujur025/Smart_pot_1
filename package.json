@@ -1,0 +1,21 @@
+{
+  "name": "sensor-test-bed-1",
+  "version": "1.0.0",
+  "requires": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "packages": {
+    "": {
+      "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "firebase-admin": "^11.11.0",
+        "node-cron": "^3.0.3",
+        "path": "^0.12.7"
+      }
+    }
+  }
+
+}
